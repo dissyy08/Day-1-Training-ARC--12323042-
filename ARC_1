@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heyyoww!!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: white;
+        }
+        header {
+            background: #d6336c;
+            color: white;
+            padding: 10px 0;
+        }
+        section {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 80vh;
+        }
+        footer {
+            background: #d6336c;
+            color: white;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+        form {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            margin: auto;
+            backdrop-filter: blur(10px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input, button, textarea, select {
+            width: 90%;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: none;
+            text-align: center;
+        }
+        button {
+            background: #ff4d6d;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #e63946;
+        }
+    </style>
+</head>
+<body>
+    <h1>HELLOO HOW'S YOUR DAYY?</h1>
+    <p>Please share your today's activity, I want to know it!</p>
+    <form> 
+        <label for="nama" >Nama kamu:</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <label for="kegiatan">Kegiatan kamu hari ini apa aja?</label>
+            <input type="text" id="kegiatan" name="kegiatan" required>
+            
+            <label for="rate">Rate seberapa seru kegiatan kamu hari ini:</label>
+            <select id="rate" name="rate" required>
+                <option value="1">1 - Sangat Membosankan</option>
+                <option value="2">2 - Kurang Seru</option>
+                <option value="3">3 - Biasa Saja</option>
+                <option value="4">4 - Cukup Seru</option>
+                <option value="5">5 - Sangat Seru</option>
+            </select>
+            
+            <label for="alasan">Kenapa kamu rate segitu?</label>
+            <textarea id="alasan" name="alasan" rows="4" required></textarea>
+            
+            <button type="submit">Kirim</button>
+    <p>THANK YOUUU, JANGAN LUPA MAKAN DAN JAGA KESEHATAN YAAA!!!</p>
+    <p>SEMANGAT TERUSSS!!!!</p>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025</p>
+    </footer>
+</body>
+</html>
